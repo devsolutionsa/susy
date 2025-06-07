@@ -24,9 +24,9 @@
       const resultado = document.getElementById("resultado");
 
       const precios = {
-        "110": 150,
-        "175": 180,
-        "210": 280
+        "110": 215,
+        "175": 220,
+        "210": 240
       };
 
       if (isNaN(cantidad) || cantidad <= 0) {

@@ -66,6 +66,13 @@ body {
   font-family: var(--default-font);
 }
 
+.text-cotizador{
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+ 
+}
+
 a {
   color: var(--accent-color);
   text-decoration: none;
