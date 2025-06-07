@@ -27,6 +27,7 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+    <link  href="./assets/css/cotizador.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: UpConstruction
@@ -54,6 +55,7 @@
           <li><a href="#nosotros">Nosotros</a></li>
           <li><a href="#servicios">Servicios</a></li>
           <li><a href="#proyectos">Proyectos</a></li>
+           <li><a href="#renta">Renta</a></li>
           <!-- <li><a href="#blog">Blog</a></li> -->
           <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
@@ -692,6 +694,138 @@
       </div>
 
     </section>
+     <section id="renta" id="constructions" class="constructions section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>RENTA EQUIPOS</h2>
+       <p>Alquiler de equipos ,bombas y mixers de concreto. </p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-item">
+              <div class="row">
+                <div class="col-xl-8">
+                  <div class="card-bg"><img src="assets/img/renta/bombatelescopica.jpeg" alt=""></div>
+                </div>
+                <div class="col-xl-4 d-flex align-items-center">
+                  <div class="card-body p-1">
+                    <h4 class="card-title">PLUMA DE CONCRETO.</h4>
+                    <p>Pluma de concreto de 38 metros.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-item">
+              <div class="row">
+                <div class="col-xl-8">
+                  <div class="card-bg"><img src="assets/img/renta/bomba.jpeg" alt=""></div>
+                </div>
+                <div class="col-xl-4 d-flex align-items-center">
+                  <div class="card-body p-1">
+                    <h4 class="card-title">BOMBA TELESCOPICA</h4>
+                    <p>Contamos con un equipo</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="card-item">
+              <div class="row">
+                <div class="col-xl-8">
+                  <div class="card-bg"><img src="assets/img/renta/bombaestacion.jpeg" alt=""></div>
+                </div>
+                <div class="col-xl-4 d-flex align-items-center">
+                  <div class="card-body p-1">
+                    <h4 class="card-title">CAMIONES MIXER</h4>
+                    <p>Camion Foton de 10 m3 de capacidad.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="card-item">
+              <div class="row">
+                <div class="col-xl-8">
+                  <div class="card-bg"><img src="assets/img/renta/9m.jpeg" alt=""></div>
+                </div>
+                <div class="col-xl-4 d-flex align-items-center">
+                  <div class="card-body p-1">
+                    <h4 class="card-title">CAMION MIXER</h4>
+                    <p>Camion foton mixer de 10m3.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Card Item -->          
+            </div>            
+        </div>      
+      </div>
+         <div class="info d-flex align-items-center">
+        <div class="container">
+          <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-6 text-center">            
+              <h2></h2>
+              <p>Conoce nuestros precion de alquiler ,contactanos ahora y obten tu promocion.</p>
+              <a href="https://w.app/ewx6tm" class="renta" target="_blank">QUIERO RENTAR</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Constructions Section -->
+     <section id="contacto" class="contact section">
+         <div class="container section-title" data-aos="fade-up">
+        <h2>COTIZADOR</h2>
+        <p>Te apoyamos en todo el proceso constructivo,contactanos</p>
+      </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-12">
+            <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200">
+                <div class="cotizador"> 
+    
+    <label for="tipo">Tipo de Concreto:</label>
+    <select id="tipo">
+      <option value="110">110(Kg/cm2)</option>
+      <option value="175">175(Kg/cm2)</option>
+      <option value="210">210(Kg/cm2)</option>
+    </select>
+
+    <label for="cantidad">Cantidad (m³):</label>
+    <input type="number" id="cantidad" placeholder="Ingrese cantidad" min="1">
+
+    <button onclick="calcular()">Calcular Precio</button>
+
+    <div class="resultado" id="resultado"></div>
+  </div>
+
+            </div>
+          </div>
+
+       
+         
+
+        </div>
+
+       
+        </div>
+
+      </div>
+
+    </section>
 
   
     <section id="testimonials" class="testimonials section">
@@ -1103,7 +1237,7 @@
  
   <div id="preloader"></div>
 
-  
+  <script src="./assets/js/cotizador.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>

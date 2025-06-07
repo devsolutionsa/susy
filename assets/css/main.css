@@ -2882,3 +2882,17 @@ section,
   cursor: pointer;
   text-decoration: none;
 }
+
+.renta{
+  padding: 8px;
+  border-radius: 8px;
+  border: solid 0.5px #feb900;
+}
+
+.renta:hover{
+  color: #fff;
+  background-color:#feb900 ;
+  padding: 8px;
+  border-radius: 8px;
+  border: solid 1px #feb900;
+}
