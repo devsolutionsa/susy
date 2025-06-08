@@ -1,40 +1,38 @@
- /* body {
-      font-family: Arial, sans-serif;
-      margin: 30px;
-      background: #f4f4f4;
+  .logo-carousel {
+      overflow: hidden;
+      background: #f8f9fa;
+      padding: 20px 0;
     }
-    .cotizador {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      max-width: 400px;
-      margin: auto;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-    label {
-      display: block;
-      margin-bottom: 10px;
-    }
-     select, input {
-      width: 100%;
-      padding: 8px;
-      margin-bottom: 15px;
-      font-size: 1em;
-    }
-    button {
-      width: 100%;
-      padding: 10px;
-      font-size: 1em;
-      background-color: #28a745;
-      color: white;
-      border: none;
-      border-radius: 5px;
-    }
-    .resultado {
-      margin-top: 20px;
-      font-weight: bold;
-    } */
 
+    .logo-track {
+      display: flex;
+      width: calc(200px * 16); /* 8 logos duplicados */
+      animation: scroll 30s linear infinite;
+    }
+
+    .logo-item {
+      flex: 0 0 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 10px;
+    }
+
+    .logo-item img {
+      max-height: 100px;
+      max-width: 100%;
+      filter: grayscale(100%);
+      transition: filter 0.3s;
+    }
+
+    .logo-item img:hover {
+      filter: none;
+    }
+
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
    
     .cotizador {
       background: white;
